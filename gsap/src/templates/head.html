@@ -1,0 +1,25 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
+<meta name="keywords" content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
+<meta name="author" content="Codrops" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="assets/css/app.css" rel="stylesheet">
+
+<script>
+	document.documentElement.className = 'js';
+	var supportsCssVars = function() {
+		var s = document.createElement('style'),
+		support;
+
+		s.innerHTML = "root: { --tmp-var: bold; }";
+		document.head.appendChild(s);
+		support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+		s.parentNode.removeChild(s);
+		return support;
+	}
+	if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+</script>
