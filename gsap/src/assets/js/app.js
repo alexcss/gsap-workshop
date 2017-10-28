@@ -13,7 +13,7 @@
 //=require plugins/ScrollToPlugin.min.js
 //=require plugins/disable-scroll.js
 // require ../../../node_modules/barba.js/dist/barba.min.js
-// require components/tilt.js
+
 
 ;(function($){
 
