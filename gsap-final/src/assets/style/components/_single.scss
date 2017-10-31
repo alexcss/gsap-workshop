@@ -1,0 +1,29 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
+
+.gs-post {
+	width: 60%;
+	margin-left: 40%;
+	padding: 1em 3em;
+	background: #40CA98;
+	color: #474283;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	position: relative;
+	z-index: 99;
+	&__title{
+		font-size: 3.25em;
+		margin: 0 0 0.5em ;
+		line-height: 1.2;
+	}
+	&__subtitle{
+		font-size: 1.75em;
+		margin: 0 0 0.6em;
+	}
+	&__content > p:first-of-type{
+		font-size: 1.35em;
+	}
+	a{
+		color: #FEF662;
+	}
+}
